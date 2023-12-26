@@ -16,7 +16,7 @@ body {
 }
 :root {
     --font-heading: Sen, sans-serif;
-    --primary-color: #FFB900;
+    --primary-color: #ffb900;
 }
 a {
     text-decoration: none;
@@ -36,7 +36,7 @@ a {
 .heading {
     color: #171100;
     font-family: var(--font-heading);
-    
+
     font-weight: 700;
     letter-spacing: -0.02em;
 }
@@ -54,7 +54,7 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.line-clamp.line-2{
+.line-clamp.line-2 {
     --line-clamp: 2;
 }
 .break-all {
@@ -113,7 +113,7 @@ a {
 /* Hero */
 .hero {
     padding: 57px 0 65px;
-    background-color:#FFFCF4;;
+    background-color: #fffcf4;
 }
 .body {
     display: flex;
@@ -131,44 +131,43 @@ a {
     vertical-align: bottom;
     /* display: block; */
 }
-.hero .media-block .hero-summary{
+.hero .media-block .hero-summary {
     position: absolute;
     padding: 24px;
     right: 0;
     bottom: 48px;
     border-radius: 12px;
     width: 270px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 .hero-summary .item {
     display: flex;
     align-items: center;
 }
-.hero-summary .item +.item {
+.hero-summary .item + .item {
     margin-top: 22px;
 }
 .hero-summary .icon {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: #FFF9E8;;
+    background-color: #fff9e8;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .hero-summary .item:nth-of-type(2) .icon {
-    background-color: #FCEFFF;
+    background-color: #fcefff;
 }
 .hero-summary .item:nth-of-type(3) .icon {
-    background-color: #EBEAFF;
+    background-color: #ebeaff;
 }
 .hero-summary .info {
     margin-left: 16px;
 }
 .hero-summary .info .label {
-    color: #5F5B53;
+    color: #5f5b53;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
@@ -184,10 +183,10 @@ a {
     width: 52%;
     padding: 64px 0 0 130px;
 }
- 
+
 .hero .desc {
     margin-top: 22px;
-    color: #5F5B53;
+    color: #5f5b53;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
@@ -247,7 +246,7 @@ a {
 }
 .popular .info .desc {
     margin-top: 16px;
-    color: #5F5B53;
+    color: #5f5b53;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.67;
@@ -263,14 +262,14 @@ a {
     width: 40px;
     height: 40px;
     background: transparent;
-    color:var(--primary-color);
+    color: var(--primary-color);
     border-radius: 50%;
     border: 1px solid var(--primary-color);
 }
 .popular .control-btn:hover {
     cursor: pointer;
     background-color: var(--primary-color);
-    color: #FFF;
+    color: #fff;
 }
 .popular .courses-list {
     display: flex;
@@ -280,14 +279,13 @@ a {
 .popular .courses-item {
     flex: 1;
     border-radius: 12px;
-    background: #FFF;
+    background: #fff;
     border: 1px solid #e2dfda;
 }
 .popular .courses-item:hover {
     cursor: pointer;
     border-color: transparent;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
-
 }
 .popular .thumb {
     margin: -1px;
@@ -307,14 +305,14 @@ a {
     line-height: 1.67;
 }
 .popular .courses-item .head .value {
-    color: #FEA31B;
+    color: #fea31b;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
 }
 .popular .courses-item .desc {
     margin-top: 6px;
-    color: #5F5B53;
+    color: #5f5b53;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.86;
@@ -334,4 +332,70 @@ a {
 .popular .courses-item .book-btn:hover {
     background-color: var(--primary-color);
     cursor: pointer;
+}
+/* Feedback */
+.feedback {
+    padding: 65px 0;
+    margin-top: 135px;
+    background: #2e2100;
+}
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+.feedback .feedback-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+}
+.feedback .info {
+    width: 34%;
+}
+.feedback .content {
+    width: 66%;
+}
+.feedback .info .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feedback .info .title {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42;
+}
+.feedback .info .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+.feedback-item .dots {
+    margin-top: 28px;
+    display: flex;
+    gap: 12px;
+}
+.feedback-item .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    cursor: pointer;
+}
+.feedback-item .dot-active {
+    background-color: #ffb900;
+    cursor: default;
+}
+.feedback-item blockquote {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54;
 }
