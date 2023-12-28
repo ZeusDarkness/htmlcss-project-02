@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html, body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -564,4 +567,71 @@ a {
     background-color: var(--primary-color);
     cursor: default;
 }
-
+/* Footer */
+.footer {
+    padding: 96px 135px 0;
+    background: #2E2100;
+}
+.footer .row {
+    display: flex;
+    border-bottom: 1px solid #59554B;
+    padding-bottom: 38px;
+}
+.footer .column {
+    width: 22%;
+}
+.footer .column:first-child {
+    width: 35%;
+}
+.footer .desc {
+    max-width: 267px;
+    margin-top: 18px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+.footer .socials {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+.footer .column .title  {
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    border-bottom: 1px solid #59554B;;
+}
+.footer .list {
+    margin-top: 28px;
+}
+.footer .list li a {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #BFBCB2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+.footer .list li:last-child a {
+    margin-bottom: 0;
+}
+.footer .list  strong {
+    color: #FFF;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.87;
+}
+.footer .copyright {
+    padding: 28px 0;
+}
+.footer .copyright p {
+    color: #807D74;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+    text-align: center;
+}
